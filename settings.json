@@ -1,0 +1,123 @@
+{
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Nord Light",
+  "workbench.preferredDarkColorTheme": "Nord",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "jupyter.alwaysTrustNotebooks": true,
+  "terminal.integrated.inheritEnv": false,
+  // "files.associations": {
+  //     "*.cu": "cpp",
+  //     "*.cuh": "cpp"
+  // },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+
+    "editor.formatOnType": true
+  },
+  "python.analysis.autoImportCompletions": true,
+  "isort.args": ["--profile", "black"],
+  "python.formatting.blackArgs": ["--line-length", "78"],
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "notebook.lineNumbers": "on",
+  "git.ignoreLegacyWarning": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "jupyter.askForKernelRestart": false,
+  "window.menuBarVisibility": "toggle",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "bracketPairColorizer.depreciation-notice": false,
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.tree.indent": 15,
+  "todohighlight.isEnable": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // VIM settings
+  "vim.leader": ",",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+
+  "vim.smartRelativeLine": true,
+  "vim.handleKeys": {
+    "<C-p>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "n"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "r", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["workbench.action.moveEditorToRightGroup"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.moveEditorToLeftGroup"]
+    },
+    {
+      "before": ["<leader>", "r", "g"],
+      "commands": ["extension.fuzzySearch"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["editor.action.marker.nextInFiles"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    }
+  ],
+  "jupyter.interactiveWindow.textEditor.autoMoveToNextCell": false,
+  "editor.formatOnSave": true,
+  // Rust
+  // "rust-analyzer.lens.enable": false,
+  // "rust-analyzer.inlayHints.typeHints.enable": false,
+  // "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "workbench.colorTheme": "Nord",
+  "workbench.editor.empty.hint": "hidden",
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "grammarly.files.include": [
+    "**/README.md",
+    "**/readme.md",
+    "**/*.txt",
+    "**/*.md"
+  ]
+}
